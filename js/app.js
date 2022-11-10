@@ -19,19 +19,27 @@ function handlePixelClicked(event) {
     buttonHTMLElement.textContent = 'Valider';
   
     formHTMLElement.appendChild(buttonHTMLElement);
+
+    formHTMLElement.addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        var gridSizeWanted = gridSizeInputHTMLElement.value;
+    
+        drawGrid(gridSizeWanted);
+      })
   }
 
-function drawGrid() {
+function drawGrid(gridSize) {
     var invaderHTMLElement = document.getElementById('invader');
   
-    for(var i = 0; i < 8; i++) {
+    for(var i = 0; i < gridSize; i++) {
       var columnHTMLElement = document.createElement('div');
   
       columnHTMLElement.classList.add('column');
   
       invaderHTMLElement.appendChild(columnHTMLElement);
   
-      for(var j = 0; j < 8; j++) {
+      for(var j = 0; j < gridSize; j++) {
 
         var pixelHTMLElement = document.createElement('div');
   
@@ -43,7 +51,5 @@ function drawGrid() {
       }
     }
   }
-  
-  drawGrid();
 
   drawForm();
