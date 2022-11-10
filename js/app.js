@@ -1,3 +1,9 @@
+function handlePixelClicked(event) {
+    var pixelClicked = event.target;
+  
+    pixelClicked.classList.toggle('black');
+  }
+
 function drawGrid() {
     var invaderHTMLElement = document.getElementById('invader');
   
@@ -13,6 +19,8 @@ function drawGrid() {
         var pixelHTMLElement = document.createElement('div');
   
         pixelHTMLElement.classList.add('pixel');
+
+        pixelHTMLElement.addEventListener('click', handlePixelClicked);
   
         columnHTMLElement.appendChild(pixelHTMLElement);
       }

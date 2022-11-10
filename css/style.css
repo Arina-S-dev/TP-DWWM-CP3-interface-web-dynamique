@@ -4,11 +4,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .pixel {
+}
+
+.pixel {
     width: 20px;
     height: 20px;
     border: 1px solid grey;
     background-color: lightgrey;
-  }
+}
+
+.black {
+    background-color: black;
+}
