@@ -4,6 +4,23 @@ function handlePixelClicked(event) {
     pixelClicked.classList.toggle('black');
   }
 
+  function drawForm() {
+    var formHTMLElement = document.getElementsByClassName('configuration')[0];
+  
+    var gridSizeInputHTMLElement = document.createElement('input');
+  
+    gridSizeInputHTMLElement.type = 'number';
+    gridSizeInputHTMLElement.placeholder = 'Taille de la grille';
+  
+    formHTMLElement.appendChild(gridSizeInputHTMLElement);
+  
+    var buttonHTMLElement = document.createElement('button');
+  
+    buttonHTMLElement.textContent = 'Valider';
+  
+    formHTMLElement.appendChild(buttonHTMLElement);
+  }
+
 function drawGrid() {
     var invaderHTMLElement = document.getElementById('invader');
   
@@ -28,3 +45,5 @@ function drawGrid() {
   }
   
   drawGrid();
+
+  drawForm();
