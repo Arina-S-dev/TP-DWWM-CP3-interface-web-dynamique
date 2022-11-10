@@ -1,0 +1,14 @@
+#invader {
+    height: calc(100vh);
+    background: linear-gradient(45deg, #3cc6ad 0%, #d279e1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pixel {
+    width: 20px;
+    height: 20px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+  }
