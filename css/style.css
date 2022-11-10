@@ -1,5 +1,5 @@
 #invader {
-    height: calc(100vh);
+    height: calc(100vh - 150px);
     background: linear-gradient(45deg, #3cc6ad 0%, #d279e1 100%);
     display: flex;
     justify-content: center;
@@ -16,3 +16,29 @@
 .black {
     background-color: black;
 }
+
+.configuration {
+    height: 150px;
+    background-color: #3a3939;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .configuration input {
+    padding: 1em;
+    border: 0;
+    font-size: 1.2em;
+    width: 10em;
+    margin-right: 2px;
+    border-radius: 0.5em 0em 0em 0.5em;
+  }
+  
+  .configuration button {
+    padding: 1em;
+    border: 0;
+    font-size: 1.2em;
+    color: #fff;
+    background: #3cc6ad;
+    border-radius:0 0.5em 0.5em 0;
+  }
