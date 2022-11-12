@@ -42,3 +42,41 @@
     background: #3cc6ad;
     border-radius:0 0.5em 0.5em 0;
   }
+
+  #palette-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 220px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background:rgba(0,0,0,.2);
+  }
+  
+  .palette-color {
+    margin: .5em;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    border-width: 2px;
+    border-style: solid;
+    cursor: pointer;
+  }
+  
+  .blue {
+    background-color: lightskyblue;
+  }
+  
+  .green {
+    background-color: palegreen;
+  }
+  
+  .red {
+    background-color: palevioletred;
+  }
+  
+  .fof {
+    background-color: #FF00FF;
+  }
