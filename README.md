@@ -2,4 +2,4 @@
 
 Invader : une application JavaScript pour créer une ardoise de dessin en pixel art.
 
-![rendu]()
+![rendu](invader.png)
